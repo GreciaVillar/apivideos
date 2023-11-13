@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Aplicación de Alquiler de Videos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h1 class="text-center">¡Bienvenido a la Aplicación de Alquiler de Videos!</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver Tipos de Video</h5>
+                        <p class="card-text">Explora nuestra colección de videos disponibles para alquilar.</p>
+                        <a href="{% url '/tipos_de_video' %}" class="btn btn-primary">Ver Tipos de Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver Alquileres</h5>
+                        <p class="card-text">Revisa los alquileres actuales y anteriores realizados por nuestros
+                            clientes.</p>
+                        <a href="{% url '/alquileres' %}" class="btn btn-primary">Ver Alquileres</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver Clientes</h5>
+                        <p class="card-text">Explora la lista de nuestros clientes registrados.</p>
+                        <a href="{% url '/clientes' %}" class="btn btn-primary">Ver Clientes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
